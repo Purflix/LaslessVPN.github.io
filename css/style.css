@@ -436,6 +436,7 @@ button {
   display: inline-block;
   background: none;
   border: none;
+  outline: none;
   color: inherit;
 }
 
@@ -525,10 +526,10 @@ h6 {
 }
 
 .button:hover,
+.button:focus,
 .button.filled {
   background: var(--color-red);
   color: var(--color-white);
-  border-radius: 10px;
 }
 
 .button.filled:hover {
