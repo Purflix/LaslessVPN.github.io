@@ -83,6 +83,11 @@ $(document).ready(function(){
 
             const elementOffset = $(data).offset().top;
             window.scroll(0, elementOffset - navHeight);
+
+            $(this).removeClass("burger--active");
+            $("body").removeClass("body-lock");
+            $(".menu").removeClass("menu--active");
+            $(".header__inner").removeClass("header__inner--active");
          }
       });
    }
