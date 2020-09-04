@@ -86,7 +86,7 @@ $(document).ready(function(){
          }
       });
    }
-   // smoothScroll();
+   smoothScroll();
    // ===X Smooth scrolling X===
 
 
@@ -131,7 +131,7 @@ $(document).ready(function(){
 
                if (windowTop + navHeight + 1 > elementOffset && elementOffset + elementHeight - navHeight - 1 > windowTop) {
                   // color when active is #cee7ba
-                  $(navBarLinks[index]).css("color", "#cee7ba");
+                  $(navBarLinks[index]).css("color", "#000");
                } else {
                   $(navBarLinks[index]).css("color", "");
                }
