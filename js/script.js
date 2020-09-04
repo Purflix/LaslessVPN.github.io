@@ -73,7 +73,7 @@ $(document).ready(function(){
    // ===> Smooth scrolling <===
    function smoothScroll() {
       const navBarLink = $("a, button");
-      const navHeight = $('.header__inner').outerHeight();
+      const navHeight = $('.header__outer').outerHeight();
 
       navBarLink.click((event) => {
          const target = event.target;
@@ -84,7 +84,7 @@ $(document).ready(function(){
             const elementOffset = $(data).offset().top;
             window.scroll(0, elementOffset - navHeight);
 
-            $(this).removeClass("burger--active");
+            $(".burger").removeClass("burger--active");
             $("body").removeClass("body-lock");
             $(".menu").removeClass("menu--active");
             $(".header__inner").removeClass("header__inner--active");
@@ -125,7 +125,7 @@ $(document).ready(function(){
       // });
 
       function navLinkHover() {
-         const navBarLinks = document.querySelectorAll(".menu__link");
+         const navBarLinks = document.querySelectorAll(".menu-link");
          $(window).scroll(function () {
             const windowTop = $(window).scrollTop();
             // === active nav-menu link by scrolling ===
@@ -145,7 +145,7 @@ $(document).ready(function(){
          });
 
       }
-      // navLinkHover();
+      navLinkHover();
    }
    stickyNavBar();
    // ===X sticky nav-bar + hover links X===
