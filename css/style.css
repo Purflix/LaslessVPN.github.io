@@ -620,6 +620,8 @@ h6 {
   right: 0;
   left: 0;
   background: #fff;
+  -webkit-box-shadow: 0 0 10px 20px #f1f1f1;
+          box-shadow: 0 0 10px 20px #f1f1f1;
 }
 
 .burger {
@@ -1235,11 +1237,11 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 50%;
-  margin: -20px;
+  margin: -20px 0;
 }
 
 .footer__column {
-  padding: 20px;
+  padding: 0 20px 20px 0;
 }
 
 .footer__column-title {
@@ -1541,8 +1543,17 @@ h6 {
 
 @media (max-width: 420px) {
   .plans__column {
-    min-height: 630px;
-    padding: 40px 40px 25px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    max-width: 300px;
+    min-height: 580px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .plans__column:not(:last-child) {
+    margin-bottom: 40px;
   }
 
   .review-slide {

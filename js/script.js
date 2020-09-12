@@ -107,8 +107,6 @@ $(document).ready(function(){
 
       const fullOffset = navHeight + nextElementPadding;
 
-      const navBarLinks = document.querySelectorAll(".menu-link");
-
       navBar.addClass("fixedToTop");
       nextElement.css("paddingTop", fullOffset);
 
